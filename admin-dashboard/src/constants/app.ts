@@ -1,5 +1,5 @@
 const APP = {
-    name: 'gully danda',
-}
+  name: "Wallpaper",
+};
 
 export default APP;
