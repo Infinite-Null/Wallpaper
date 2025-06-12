@@ -994,14 +994,6 @@ export default function Home() {
 
               <div className="flex justify-end gap-2">
                 <Button
-                  variant="outline"
-                  onClick={() => openEditForm(selectedWallpaper)}
-                  className="gap-2"
-                >
-                  <Edit className="h-4 w-4" />
-                  Edit
-                </Button>
-                <Button
                   onClick={() => {
                     setShowDetails(false);
                     setSelectedWallpaper(null);
