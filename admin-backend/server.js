@@ -12,6 +12,7 @@ import logger from './config/logger.js';
 import morganMiddleware from './config/morgan.js';
 import { errorHandler } from './middleware/error-handler.js';
 import authRoute from './routes/auth.js';
+import wallpaperRoute from './routes/wallpaper.js';
 import response from './template/response.js';
 
 /**
@@ -42,6 +43,7 @@ const BASE_URL = process.env.BASE_URL || 'http://localhost:';
 
 // Routes.
 app.use( '/api/v1/admin/auth', authRoute );
+app.use( '/api/v1/admin/wallpapers', wallpaperRoute );
 
 app.use( ( _, res ) => {
     return response(
